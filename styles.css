@@ -1,0 +1,169 @@
+:root {
+    /* primary colors */
+    --col1 : #EEEEEE;
+    --col2 : #DEDEDE;
+    --col3 : #FF4949;
+    --col4 : #C10000;
+}
+
+body{
+    background-color: var(--col2);
+}
+
+h1{
+    /* -webkit-mask-image: url("textures/grit.png");
+    mask-image: url("textures/grit.png"); */
+}
+
+#outerCase{
+    /* -webkit-mask-image: url("textures/metal.png");
+    mask-image: url("textures/metal.png"); */
+    position: absolute;
+    left:6%;
+    top:10%;
+    background-color: var(--col3);
+    width:34%;
+    height:85%;
+
+    border-width: 0.8rem;
+    border-color: var(--col4);
+    border-style: solid;
+    border-radius: 5%;
+
+    
+}
+
+body{
+    size:100%;
+}
+
+.machine{
+    position: absolute;
+    width:30%;
+    top:5%;
+}
+
+#Dollar1{
+    position: absolute;
+    top:35%;
+    left:40%;
+    width:16%;
+}
+
+#Dollar5{
+    position: absolute;
+    top:35%;
+    right:15%;
+    width:16%;
+}
+
+h1{
+    position: absolute;
+    top:10%;
+    left:50%;
+    font-size: 100px;
+}
+
+#coin{
+    position: absolute;
+    top:60%;
+    left:58%;
+    width:10%;
+}
+
+.soda{
+    position:absolute;
+    width:4%;
+    left:11.5%;
+    top:36%;
+    transition: transform 1s, top 1s;
+}
+
+#balance{
+    position: absolute;
+    top:18%;
+    left:20.7%;
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: greenyellow; */
+    width:4%;
+    height: 3%;
+    color:white;
+    font-size:150%;
+}
+
+.menu{
+    width:20%;
+    height: 50%;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    background-color: var(--col1);
+    border-radius: 10px;
+    text-align: left;
+    font-size: 45px;
+    word-wrap: break-word;
+    inline-size: 20%; 
+    overflow-wrap: break-word;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-menu{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.optionButton{
+    position: relative;
+    top:40%;
+    width:100px;
+    margin-top:10px;
+    padding:10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+#selector{
+    width:8rem;
+    height: 10rem;
+    border-width: 1rem;
+    /* border-style: solid; */
+    position: absolute;
+    top:16%;
+    left:19%;
+    cursor: pointer;
+}
+
+#reset{
+    position: absolute;
+    bottom:5%;
+    left:10%;
+    width:10%;
+    background-color: transparent;
+    border-radius: 10%;
+    cursor:pointer;
+}
+
+.out{
+    top:68%;
+    transform: rotate(270deg);
+    left:18%;
+}
+
+#less{
+    text-align: center;
+    font-size: 80px;
+    color:#C10000;
+    vertical-align: middle;
+}
+
+#ok{
+    position: relative;
+    top:40%;
+    left:-30%;
+    width: 100px;
+    height: 100px;
+
+}
