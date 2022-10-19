@@ -7,30 +7,47 @@
     </head>
 
     <body>
-        <h1>Rust-O-Matic 3000</h1>
-        <div>
+        <button onclick="reset()" id="reset">Reset</button>
+        <div id ="main">
+        
+        
+        <div id="vending-machine">
             <img src="images/machine.svg" alt="Vending" class="machine">
-            <img src="images/soda.svg" alt="Soda" class="soda" id="soda">
-            <div id="balance" >$0.00 Click v</div>
+            <div id="balance" >$0.00</div>
             <div id="selector" onclick="openMenu()" style="cursor: pointer"></div>
+            <!-- Items below vvv : -->
+            <div id="items-grid">
+                <img src="images/chips.svg" alt="Chips" class="chips" id="chips">
+                <img src="images/chocolate.svg" alt="chocolate" class="chocolate" id="chocolate">
+                <img src="images/water.svg" alt="water" class="water" id="water">
+                <img src="images/soda.svg" alt="Soda" class="soda" id="soda">
+            </div>
+            
         </div>
         
-        <input type="image" src="images/1Dollar.svg" id="Dollar1" onclick="oneDollar()">
-        <input id="Dollar5" type="image" src="images/5Dollar.svg" onclick="fiveDollars()">
-        <input id="coin" type="image" src="images/coin.svg" onclick="coin()">
-        <button onclick="reset()" id="reset">Reset</button>
+        <div id="balance-menu">
+            <h1 id="machine-title">Rust-O-Matic 3000</h1>
+            <div id="bills">
+                <input type="image" src="images/1Dollar.svg" id="Dollar1" onclick="oneDollar()">
+                <input id="Dollar5" type="image" src="images/5Dollar.svg" onclick="fiveDollars()">
+            </div>
+            <input id="coin" type="image" src="images/coin.svg" onclick="coin()">
+            
+        </div>
+
+    </div>
 
         <div class="menu" id="menu">
             <h2>Choose item:</h2>
             <ul>
-                <li><button class="optionButton">1</button></li>
-                <li><button class="optionButton">2</button></li>
-                <li><button class="optionButton">3</button></li>
+                <li><button class="optionButton"  onclick="option(0);closeMenu();">Chips $3.50</button></li>
+                <li><button class="optionButton"  onclick="option(1);closeMenu();">Chocolate $11</button></li>
+                <li><button class="optionButton"  onclick="option(2);closeMenu();">Water $2</button></li>
                 <li><button class="optionButton"  onclick="option(3);closeMenu();">Soda $2.50</button></li>
             </ul>
         </div>
 
-        <div class="menu" id="less">Insufficient funds =(<button onclick="ok()" id="ok">OK</button></div>
+        <div class="menu" id="less">Esti sarac ba =(<button onclick="ok()" id="ok">OK</button></div>
         
         
     </body>
