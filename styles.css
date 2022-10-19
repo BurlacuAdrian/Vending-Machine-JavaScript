@@ -10,86 +10,112 @@ body{
     background-color: var(--col2);
 }
 
-h1{
-    /* -webkit-mask-image: url("textures/grit.png");
-    mask-image: url("textures/grit.png"); */
+#main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    width:90%;
+    /* border:5px solid yellow; */
 }
 
-#outerCase{
-    /* -webkit-mask-image: url("textures/metal.png");
-    mask-image: url("textures/metal.png"); */
-    position: absolute;
-    left:6%;
-    top:10%;
-    background-color: var(--col3);
-    width:34%;
-    height:85%;
-
-    border-width: 0.8rem;
-    border-color: var(--col4);
-    border-style: solid;
-    border-radius: 5%;
-
-    
+#balance-menu{
+    flex:2.5;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+     /* border: 5px solid red; */
 }
 
-body{
-    size:100%;
+h1#machine-title{
+    font-size: 6rem;
 }
 
-.machine{
-    position: absolute;
-    width:30%;
-    top:5%;
+#bills{
+    display:flex;
+    justify-content: space-around;
+    /* border: 2px solid green; */
 }
 
-#Dollar1{
-    position: absolute;
-    top:35%;
-    left:40%;
-    width:16%;
-}
-
-#Dollar5{
-    position: absolute;
-    top:35%;
-    right:15%;
-    width:16%;
-}
-
-h1{
-    position: absolute;
-    top:10%;
-    left:50%;
-    font-size: 100px;
+#Dollar1,#Dollar5{
+    width:35%;
 }
 
 #coin{
-    position: absolute;
-    top:60%;
-    left:58%;
-    width:10%;
+    align-self: center;
+    width:20%;
 }
 
-.soda{
+#vending-machine{
+    flex:1.5;
+    /* border: 5px solid green; */
+    position: relative;
+}
+
+.machine{
+    width:90%;
+    height: 90%;
+}
+
+#items-grid{
+    /* position: absolute;
+    top:8%;
+    left:8%; */
+    width: 40%;
+    min-width: 30%;
+    height: 50%;
+    min-height: 50%;
+    display: block;
+    position: absolute;
+    top: 37%;
+    left: 30%;
+    
+    transform: translate(-50%, -50%);
     position:absolute;
-    width:4%;
-    left:11.5%;
-    top:36%;
+
+    /* border:2px solid pink; */
+}
+
+.chips{
+    position:relative;
+    left:5%;
+    top:16%;
+    width:40%;
+    transition: transform 1s, top 1s;
+}
+.chocolate{
+    position:relative;
+    right:-22%;
+    top:16%;
+    width:40%;
+    
+    transition: transform 1s, top 1s;
+}
+.water{
+    position:relative;
+    top:28%;
+    width: 50%;
+    transition: transform 1s, top 1s;
+}
+.soda{
+    position:relative;
+    bottom:-30%;
+    right:-15%;
+    width:25%;
     transition: transform 1s, top 1s;
 }
 
 #balance{
     position: absolute;
-    top:18%;
-    left:20.7%;
+    top:16%;
+    right: 32%;
     /* border-width: 10px;
     border-style: solid;
     border-color: greenyellow; */
     width:4%;
     height: 3%;
     color:white;
-    font-size:150%;
+    font-size:1vw;
 }
 
 .menu{
@@ -126,13 +152,12 @@ h1{
 }
 
 #selector{
-    width:8rem;
-    height: 10rem;
-    border-width: 1rem;
-    /* border-style: solid; */
+    width:20%;
+    height: 20%;
+    /* border:2px solid blue;  */
     position: absolute;
-    top:16%;
-    left:19%;
+    right: 21%;
+    top:15%;
     cursor: pointer;
 }
 
@@ -147,7 +172,12 @@ h1{
 }
 
 .out{
-    top:68%;
+    top:100%;
+    transform: rotate(270deg);
+    left:18%;
+}
+.out2{
+    top:133%;
     transform: rotate(270deg);
     left:18%;
 }
@@ -167,3 +197,4 @@ h1{
     height: 100px;
 
 }
+
